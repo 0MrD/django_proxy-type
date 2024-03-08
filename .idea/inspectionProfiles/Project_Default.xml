@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="random.random.random" />
+          <option value="test1.paseXMLorHTML.paseHTML.beautifulsoup2" />
+          <option value="super.get_media_requests" />
+          <option value="ip代理.proxypool模块.test.util" />
+          <option value="lxml.etree.HTML" />
+          <option value="lxml.etree.xpath" />
+          <option value="Exception.__await__" />
+          <option value="ip代理.手写代理池.RedisClient.save_proxy_db" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
