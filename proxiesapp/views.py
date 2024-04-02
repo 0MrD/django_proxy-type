@@ -1,3 +1,5 @@
+import pandas as pd
+from ..django_scrapy.django_scrapy.pipelines import DjangoScrapyPipeline
 from django.http import HttpResponse
 from django.shortcuts import render
 from proxiesapp.writeProxy.storageModule import RedisClient
@@ -22,3 +24,4 @@ def all_proxy(request):
     conn = get_conn()
     all_proxy = conn.hgetAll()#返回的是列表
     return render(request,"../templates/web.html",context={"all_proxy":all_proxy})
+

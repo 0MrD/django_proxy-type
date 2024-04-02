@@ -1,6 +1,8 @@
 import logging
 from environs import Env
 from fake_headers import Headers
+
+
 """配置文件"""
 env = Env()
 # redis host
@@ -12,11 +14,12 @@ REDIS_PORT = env.int('PROXYPOOL_REDIS_PORT', env.int('REDIS_PORT', 6379))
 REDIS_PASSWORD = env.str('PROXYPOOL_REDIS_PASSWORD',
                          env.str('REDIS_PASSWORD', None))
 # redis db, if no choice, set it to 0
-REDIS_DB = env.int('PROXYPOOL_REDIS_DB', env.int('REDIS_DB', 3))
+REDIS_DB = env.int('PROXYPOOL_REDIS_DB', env.int('REDIS_DB', 2))
 
 #redis key
 REDIS_KEY = env.str('PROXYPOOL_REDIS_KEY', env.str(
-    'REDIS_KEY', 'proxies:universal'))
+    'REDIS_KEY', 'proxies:universal'))  #会在proxies文件夹下创建key为proxies:universal的redis
+"""REDIS_KEY = env.str('PROXYPOOL_REDIS_KEY', "proxies")""" #直接创建key为proxies的redis
 #数据库代理数
 Redis_PROXY_MIN = 40
 
