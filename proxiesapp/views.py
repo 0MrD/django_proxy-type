@@ -1,6 +1,3 @@
-import pandas as pd
-from ..django_scrapy.django_scrapy.pipelines import DjangoScrapyPipeline
-from django.http import HttpResponse
 from django.shortcuts import render
 from proxiesapp.writeProxy.storageModule import RedisClient
 # Create your views here.
