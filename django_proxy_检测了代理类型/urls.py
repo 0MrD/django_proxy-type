@@ -24,6 +24,4 @@ urlpatterns = [
     path('random/', proxiesapp.views.random),
     path('count/', proxiesapp.views.count),
     path('all_proxy/', proxiesapp.views.all_proxy),
-
-
 ]
