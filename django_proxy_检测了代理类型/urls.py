@@ -17,7 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import proxiesapp.views
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     #即当前localhost/test地址会去匹配app01.views下的视图函数django_spider
